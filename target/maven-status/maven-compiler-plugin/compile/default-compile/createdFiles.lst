@@ -1,0 +1,6 @@
+app/App.class
+zookeeper/leaderelection/ElectionObserverImpl.class
+zookeeper/serviceregistry/Entity.class
+zookeeper/serviceregistry/ServiceRegistry.class
+zookeeper/leaderelection/ElectionObserver.class
+zookeeper/leaderelection/LeaderElection.class
