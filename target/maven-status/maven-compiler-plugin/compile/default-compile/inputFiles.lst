@@ -1,6 +1,10 @@
-/Users/Kyle/workspace/projects/SearchEngine/src/main/java/zookeeper/leaderelection/ElectionObserver.java
-/Users/Kyle/workspace/projects/SearchEngine/src/main/java/zookeeper/leaderelection/ElectionObserverImpl.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/entity/Znode.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/entity/Namespace.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/manager/ClusterManager.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/app/App.java
-/Users/Kyle/workspace/projects/SearchEngine/src/main/java/zookeeper/leaderelection/LeaderElection.java
-/Users/Kyle/workspace/projects/SearchEngine/src/main/java/zookeeper/serviceregistry/Entity.java
-/Users/Kyle/workspace/projects/SearchEngine/src/main/java/zookeeper/serviceregistry/ServiceRegistry.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/serviceregistry/ServiceRegistry.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/manager/ElectionObserver.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/serviceregistry/ServiceRegistryImpl.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/manager/ElectionObserverImpl.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/manager/ClusterManagerImpl.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/entity/ZnodeImpl.java
