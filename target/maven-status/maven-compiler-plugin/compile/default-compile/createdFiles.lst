@@ -10,8 +10,14 @@ cluster/entity/Namespace.class
 cluster/entity/ZnodeImpl.class
 handler/ResponseHandler.class
 cluster/manager/ElectionObserverImpl.class
+repository/Books.class
+entity/handler/CoordinateResponse.class
+entity/repository/Document.class
 app/App.class
 handler/RequestHandler.class
 server/WebServer.class
+controller/SearchCoordinatorControllerImpl.class
 cluster/manager/ClusterManager.class
 cluster/entity/Znode.class
+entity/handler/CoordinateRequest.class
+controller/SearchCoordinatorController.class

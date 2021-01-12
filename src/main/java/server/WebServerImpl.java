@@ -54,6 +54,11 @@ public class WebServerImpl implements WebServer {
         return new HttpHandler() {
             @Override
             public void handle(HttpExchange exchange) throws IOException {
+                if (!exchange.getRequestMethod().equalsIgnoreCase(handler.getMethod())) {
+                    exchange.close();
+                    return;
+                }
+
                 try {
                     final byte[] resp = handler.handleRequest(exchange.getRequestBody().readAllBytes());
                     responseHandler.sendResponse(200, resp, exchange);

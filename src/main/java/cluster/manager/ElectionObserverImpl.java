@@ -14,7 +14,8 @@ public class ElectionObserverImpl implements ElectionObserver {
 
     @Override
     public void onLeader() {
-        String host = "http:localhost:8080";
+        String host = "http://localhost:8080";
+
         this.coordinatorRegistry.register(host);
     }
 
