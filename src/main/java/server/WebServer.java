@@ -1,0 +1,7 @@
+package server;
+
+public interface WebServer {
+    void start();
+    void stop();
+    void setHandlers();
+}
