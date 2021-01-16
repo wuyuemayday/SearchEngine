@@ -2,10 +2,10 @@ server/WebServerImpl$1.class
 handler/SearchCoordinatorHandler.class
 cluster/manager/ClusterManagerImpl.class
 entity/cluster/Constant.class
-module/SearchCoordinatorProvider.class
 server/WebServerImpl.class
 cluster/manager/ElectionObserver.class
 module/ObjectMapperProvider.class
+module/SearchProvider.class
 entity/handler/CoordinateResponse.class
 entity/repository/Document.class
 server/WebServer.class

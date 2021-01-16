@@ -2,7 +2,6 @@
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/serviceregistry/ServiceRegistryImpl.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/manager/ClusterManagerImpl.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/server/WebServerImpl.java
-/Users/Kyle/workspace/projects/SearchEngine/src/main/java/module/SearchCoordinatorProvider.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/repository/Documents.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/controller/SearchCoordinatorControllerImpl.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/entity/handler/CoordinateResponse.java
@@ -19,6 +18,7 @@
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/module/ObjectMapperProvider.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/serviceregistry/ServiceRegistry.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/repository/DocumentsImpl.java
+/Users/Kyle/workspace/projects/SearchEngine/src/main/java/module/SearchProvider.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/controller/SearchCoordinatorController.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/cluster/manager/ElectionObserverImpl.java
 /Users/Kyle/workspace/projects/SearchEngine/src/main/java/handler/SearchCoordinatorHandler.java

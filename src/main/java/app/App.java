@@ -5,7 +5,7 @@ import cluster.serviceregistry.ServiceRegistryImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import entity.cluster.Constant;
 import module.ObjectMapperProvider;
-import module.SearchCoordinatorProvider;
+import module.SearchProvider;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -30,7 +30,7 @@ public final class App implements Watcher {
         final ServiceRegistry workerRegistry = new ServiceRegistryImpl(this.zookeeper, Constant.SUB_WORKER);
 
         final ObjectMapper objectMapper = ObjectMapperProvider.provideObjectMapper();
-        final SearchCoordinatorProvider coordinatorProvider = new SearchCoordinatorProvider(objectMapper, workerRegistry);
+        final SearchProvider coordinatorProvider = new SearchProvider(objectMapper, workerRegistry);
         final ElectionObserver observer = new ElectionObserverImpl(
                 coordinatorRegistry, workerRegistry, coordinatorProvider, port);
 

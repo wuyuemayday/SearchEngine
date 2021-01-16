@@ -4,7 +4,8 @@ import cluster.serviceregistry.ServiceRegistry;
 import handler.RequestHandler;
 import handler.ResponseHandler;
 import handler.SearchCoordinatorHandler;
-import module.SearchCoordinatorProvider;
+import handler.SearchWorkerHandler;
+import module.SearchProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import server.WebServer;
@@ -16,33 +17,40 @@ public class ElectionObserverImpl implements ElectionObserver {
 
     private final ServiceRegistry coordinatorRegistry;
     private final ServiceRegistry workerRegistry;
-    private final SearchCoordinatorProvider coordinatorProvider;
+    private final SearchProvider searchProvider;
     private final int port;
 
     public ElectionObserverImpl(final ServiceRegistry coordinatorRegistry,
                                 final ServiceRegistry workerRegistry,
-                                final SearchCoordinatorProvider coordinatorProvider,
+                                final SearchProvider searchProvider,
                                 final int port) {
         this.coordinatorRegistry = coordinatorRegistry;
         this.workerRegistry = workerRegistry;
-        this.coordinatorProvider = coordinatorProvider;
+        this.searchProvider = searchProvider;
         this.port = port;
     }
 
     @Override
     public void onLeader() {
-        final SearchCoordinatorHandler handler = this.coordinatorProvider.provideHandler();
-        final WebServer coordinatorServer = new WebServerImpl(
+        final SearchCoordinatorHandler handler = this.searchProvider.provideCoordinatorHandler();
+        final WebServer server = new WebServerImpl(
                 port, new RequestHandler[]{handler}, new ResponseHandler());
-        coordinatorServer.start();
-        LOGGER.info("Starting server on port {}", port);
+
+        server.start();
+        LOGGER.info("Starting coordinator server on port {}", port);
 
         this.coordinatorRegistry.register(LOCALHOST + handler.getEndpoint());
     }
 
     @Override
     public void onWorker() {
-        String host = "dummy";
-        this.workerRegistry.register(host);
+        final SearchWorkerHandler handler = this.searchProvider.provideWorkerHandler();
+        final WebServer server = new WebServerImpl(
+                port, new RequestHandler[]{handler}, new ResponseHandler());
+
+        server.start();
+        LOGGER.info("Starting worker server on port {}", port);
+
+        this.workerRegistry.register(LOCALHOST + handler.getEndpoint());
     }
 }
