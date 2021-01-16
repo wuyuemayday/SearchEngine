@@ -3,15 +3,19 @@ package server;
 import com.sun.net.httpserver.*;
 import handler.RequestHandler;
 import handler.ResponseHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
 public class WebServerImpl implements WebServer {
+    private static final Logger LOGGER = LoggerFactory.getLogger(WebServerImpl.class);
     private static final String STATUS_ENDPOINT = "/health";
     private static final int DEFAULT_THREADPOOL = 8;
 
+    private final int port;
     private final RequestHandler[] requestHandlers;
     private final ResponseHandler responseHandler;
     private HttpServer server;
@@ -20,6 +24,7 @@ public class WebServerImpl implements WebServer {
             final int port,
             final RequestHandler[] requestHandlers,
             final ResponseHandler responseHandler) {
+        this.port = port;
         this.requestHandlers = requestHandlers;
         this.responseHandler = responseHandler;
 
@@ -33,6 +38,9 @@ public class WebServerImpl implements WebServer {
 
     @Override
     public void start() {
+        this.initialize();
+
+        LOGGER.info("Starting server on port {}", this.port);
         this.server.start();
     }
 
@@ -41,8 +49,7 @@ public class WebServerImpl implements WebServer {
         server.stop(30);
     }
 
-    @Override
-    public void setHandlers() {
+    private void initialize() {
         server.createContext(STATUS_ENDPOINT).setHandler(this::handleHealthRequest);
 
         for (RequestHandler handler : this.requestHandlers) {

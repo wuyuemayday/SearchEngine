@@ -19,6 +19,7 @@ public class ElectionObserverImpl implements ElectionObserver {
     private final ServiceRegistry workerRegistry;
     private final SearchProvider searchProvider;
     private final int port;
+    private WebServer server;
 
     public ElectionObserverImpl(final ServiceRegistry coordinatorRegistry,
                                 final ServiceRegistry workerRegistry,
@@ -33,24 +34,24 @@ public class ElectionObserverImpl implements ElectionObserver {
     @Override
     public void onLeader() {
         final SearchCoordinatorHandler handler = this.searchProvider.provideCoordinatorHandler();
-        final WebServer server = new WebServerImpl(
-                port, new RequestHandler[]{handler}, new ResponseHandler());
-
-        server.start();
-        LOGGER.info("Starting coordinator server on port {}", port);
-
+        this.startServer(handler);
         this.coordinatorRegistry.register(LOCALHOST + handler.getEndpoint());
     }
 
     @Override
     public void onWorker() {
         final SearchWorkerHandler handler = this.searchProvider.provideWorkerHandler();
-        final WebServer server = new WebServerImpl(
-                port, new RequestHandler[]{handler}, new ResponseHandler());
-
-        server.start();
-        LOGGER.info("Starting worker server on port {}", port);
-
+        this.startServer(handler);
         this.workerRegistry.register(LOCALHOST + handler.getEndpoint());
+    }
+
+    private void startServer(final RequestHandler handler) {
+        if (this.server != null) {
+            this.server.stop();
+        }
+
+        this.server = new WebServerImpl(
+                port, new RequestHandler[]{handler}, new ResponseHandler());
+        server.start();
     }
 }
