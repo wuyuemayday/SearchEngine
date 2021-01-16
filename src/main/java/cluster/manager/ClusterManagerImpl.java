@@ -1,6 +1,6 @@
 package cluster.manager;
 
-import cluster.entity.Namespace;
+import entity.cluster.Constant;
 import org.apache.zookeeper.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +30,7 @@ public final class ClusterManagerImpl implements ClusterManager, Watcher {
         }
 
         try {
-            final String znodePrefix = String.format("%s/%s", Namespace.SUB_NODE, ZNODE_PREFIX);
+            final String znodePrefix = String.format("%s/%s", Constant.SUB_NODE, ZNODE_PREFIX);
             final String znodeFullPath = zookeeper.create(
                     znodePrefix,
                     new byte[]{},
@@ -38,7 +38,7 @@ public final class ClusterManagerImpl implements ClusterManager, Watcher {
                     CreateMode.EPHEMERAL_SEQUENTIAL);
 
             logger.info(String.format("znode name: %s", znodeFullPath));
-            this.currentZnode = new ZnodeImpl(znodeFullPath.replace(Namespace.SUB_NODE + "/", ""));
+            this.currentZnode = new ZnodeImpl(znodeFullPath.replace(Constant.SUB_NODE + "/", ""));
         } catch (final KeeperException | InterruptedException e) {
             e.printStackTrace();
         }
@@ -47,7 +47,7 @@ public final class ClusterManagerImpl implements ClusterManager, Watcher {
     @Override
     public void electLeader() {
         try {
-            final List<String> children = zookeeper.getChildren(Namespace.SUB_NODE, false);
+            final List<String> children = zookeeper.getChildren(Constant.SUB_NODE, false);
             Collections.sort(children);
             if (children.isEmpty()) {
                 logger.error("no server in the cluster");
@@ -67,7 +67,7 @@ public final class ClusterManagerImpl implements ClusterManager, Watcher {
                 }
 
                 final String predecessorZnode = children.get(currentPosition - 1);
-                zookeeper.exists(String.format("%s/%s", Namespace.SUB_NODE, predecessorZnode), this);
+                zookeeper.exists(String.format("%s/%s", Constant.SUB_NODE, predecessorZnode), this);
                 logger.info(String.format("Watching znode %s", predecessorZnode));
 
                 electionObserver.onWorker();

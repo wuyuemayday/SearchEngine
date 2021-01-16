@@ -1,8 +1,11 @@
 package app;
 
-import cluster.entity.Namespace;
 import cluster.serviceregistry.ServiceRegistry;
 import cluster.serviceregistry.ServiceRegistryImpl;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import entity.cluster.Constant;
+import module.ObjectMapperProvider;
+import module.SearchCoordinatorProvider;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -17,25 +20,31 @@ import java.io.IOException;
 
 public final class App implements Watcher {
     private static final Logger LOGGER = Logger.getLogger(App.class);
-    private static final String ZOOKEEPER_ADDRESS = "localhost:2181";
-    private static final int SESSION_TIMEOUT = 3000;
-
     private final ZooKeeper zookeeper;
     private final ClusterManager clusterManager;
 
-    public App() throws IOException, KeeperException, InterruptedException {
-        this.zookeeper = new ZooKeeper(ZOOKEEPER_ADDRESS, SESSION_TIMEOUT, this);
+    public App(final int port) throws IOException, KeeperException, InterruptedException {
+        this.zookeeper = new ZooKeeper(Constant.ZOOKEEPER_ADDRESS, Constant.SESSION_TIMEOUT, this);
 
-        final ServiceRegistry coordinatorRegistry = new ServiceRegistryImpl(this.zookeeper, Namespace.SUB_COORDINATOR);
-        final ServiceRegistry workerRegistry = new ServiceRegistryImpl(this.zookeeper, Namespace.SUB_WORKER);
+        final ServiceRegistry coordinatorRegistry = new ServiceRegistryImpl(this.zookeeper, Constant.SUB_COORDINATOR);
+        final ServiceRegistry workerRegistry = new ServiceRegistryImpl(this.zookeeper, Constant.SUB_WORKER);
 
-        final ElectionObserver observer = new ElectionObserverImpl(coordinatorRegistry, workerRegistry);
+        final ObjectMapper objectMapper = ObjectMapperProvider.provideObjectMapper();
+        final SearchCoordinatorProvider coordinatorProvider = new SearchCoordinatorProvider(objectMapper, workerRegistry);
+        final ElectionObserver observer = new ElectionObserverImpl(
+                coordinatorRegistry, workerRegistry, coordinatorProvider, port);
+
         this.clusterManager = new ClusterManagerImpl(this.zookeeper, observer);
     }
 
     public static void main(String[] args) {
+        int port = 8080;
+        if (args.length == 1) {
+            port = Integer.parseInt(args[0]);
+        }
+
         try {
-            final App app = new App();
+            final App app = new App(port);
 
             app.run();
             app.shutdown();
