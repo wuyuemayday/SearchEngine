@@ -1,19 +1,19 @@
 package entity.handler;
 
-import entity.repository.Document;
+import entity.repository.DocumentRecord;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public final class CoordinateResponse {
-    private final List<Document> result;
+    private final List<DocumentRecord> result;
 
-    public CoordinateResponse(final List<Document> result) {
+    public CoordinateResponse(final List<DocumentRecord> result) {
         this.result = new ArrayList<>(result);
     }
 
-    public List<Document> getResult() {
+    public List<DocumentRecord> getResult() {
         return Collections.unmodifiableList(result);
     }
 }

@@ -2,18 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d0bac3-375e-455d-a8fb-0b84d5d8f13e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/searchengine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_50_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_jute_3_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/document/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/strategy/TFIDFResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/document/DocumentSplitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/document/SimpleSplitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/search/TFIDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/DocumentUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/searchengine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/searchengine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/handler/CoordinateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/handler/CoordinateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/repository/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/repository/DocumentRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Documents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/Znode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/ZnodeImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserverImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/cluster/Constant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/handler/CoordinateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/handler/CoordinateResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/repository/Document.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/ResponseHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/ObjectMapperProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/SearchProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/Documents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +91,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1mu2UqCDxxa6ZBRzP46aVUtwi6O" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,7 +110,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
@@ -55,24 +121,37 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.App" />
+    <configuration default="true" type="Application" factoryName="Application">
       <module name="searchengine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.App" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="lagom:runAll" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -92,34 +171,46 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="208" y="25" key="#Project_Structure/0.25.1440.813@0.25.1440.813" timestamp="1610331030038" />
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1610778806235">
+    <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610825845843">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.25.1440.813@0.25.1440.813" timestamp="1610778806235" />
+    <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.813@0.25.1440.813" timestamp="1610825845843" />
+    <state x="454" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610825128624">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="454" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.813@0.25.1440.813" timestamp="1610825128624" />
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1610925421464">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.25.1440.813@0.25.1440.813" timestamp="1610925421464" />
+    <state x="457" y="225" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1610825839476">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="457" y="225" key="#com.intellij.ide.util.TreeClassChooserDialog/0.25.1440.813@0.25.1440.813" timestamp="1610825839476" />
     <state x="494" y="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1610427376706">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="494" y="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.25.1440.813@0.25.1440.813" timestamp="1610427376706" />
-    <state x="205" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610778776656">
+    <state x="205" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610911962606">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="205" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.813@0.25.1440.813" timestamp="1610778776656" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1610824591302">
+    <state x="205" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.813@0.25.1440.813" timestamp="1610911962606" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1610825855348">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1610824591302" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1610824591301">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1610825855348" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1610825855347">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1610824591301" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1610824591301">
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1610825855347" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1610825855347">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1610824591301" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1610824591302">
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1610825855347" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1610825855348">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1610824591302" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1610825855348" />
     <state width="1398" height="258" key="GridCell.Tab.1.bottom" timestamp="1610824345533">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -140,17 +231,17 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="255" y="90" key="Maven.ArtifactSearchDialog/0.25.1440.813@0.25.1440.813" timestamp="1610330017607" />
-    <state x="229" y="67" key="SettingsEditor" timestamp="1610824635350">
+    <state x="229" y="67" key="SettingsEditor" timestamp="1610825583338">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="229" y="67" key="SettingsEditor/0.25.1440.813@0.25.1440.813" timestamp="1610824635350" />
-    <state x="385" y="194" key="run.anything.popup" timestamp="1610332087274">
+    <state x="229" y="67" key="SettingsEditor/0.25.1440.813@0.25.1440.813" timestamp="1610825583338" />
+    <state x="385" y="194" key="run.anything.popup" timestamp="1610911476142">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="385" y="194" key="run.anything.popup/0.25.1440.813@0.25.1440.813" timestamp="1610332087274" />
-    <state x="385" y="162" width="670" height="676" key="search.everywhere.popup" timestamp="1610419637716">
+    <state x="385" y="194" key="run.anything.popup/0.25.1440.813@0.25.1440.813" timestamp="1610911476142" />
+    <state x="385" y="162" width="670" height="676" key="search.everywhere.popup" timestamp="1610913053616">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="385" y="162" width="670" height="676" key="search.everywhere.popup/0.25.1440.813@0.25.1440.813" timestamp="1610419637716" />
+    <state x="385" y="162" width="670" height="676" key="search.everywhere.popup/0.25.1440.813@0.25.1440.813" timestamp="1610913053616" />
   </component>
 </project>

@@ -38,7 +38,7 @@ public final class App implements Watcher {
     }
 
     public static void main(String[] args) {
-        int port = 8080;
+        int port = 8081;
         if (args.length == 1) {
             port = Integer.parseInt(args[0]);
         }

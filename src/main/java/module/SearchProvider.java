@@ -6,7 +6,7 @@ import controller.SearchCoordinatorController;
 import controller.SearchCoordinatorControllerImpl;
 import handler.SearchCoordinatorHandler;
 import handler.SearchWorkerHandler;
-import repository.DocumentsImpl;
+import repository.DocumentsRepoImpl;
 
 public final class SearchProvider {
     private final ObjectMapper objectMapper;
@@ -19,7 +19,7 @@ public final class SearchProvider {
     }
 
     public SearchCoordinatorHandler provideCoordinatorHandler() {
-        final SearchCoordinatorController controller = new SearchCoordinatorControllerImpl(this.workerRegistry, new DocumentsImpl());
+        final SearchCoordinatorController controller = new SearchCoordinatorControllerImpl(this.workerRegistry, new DocumentsRepoImpl());
 
         return new SearchCoordinatorHandler(controller, this.objectMapper);
     }

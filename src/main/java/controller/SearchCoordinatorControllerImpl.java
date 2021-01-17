@@ -3,15 +3,15 @@ package controller;
 import cluster.serviceregistry.ServiceRegistry;
 import entity.handler.CoordinateRequest;
 import entity.handler.CoordinateResponse;
-import repository.Documents;
+import repository.DocumentsRepo;
 
 public class SearchCoordinatorControllerImpl implements SearchCoordinatorController {
     private final ServiceRegistry workerRegistry;
-    private final Documents booksRepo;
+    private final DocumentsRepo booksRepo;
 
     public SearchCoordinatorControllerImpl(
             final ServiceRegistry workerRegistry,
-            final Documents booksRepo) {
+            final DocumentsRepo booksRepo) {
         this.workerRegistry = workerRegistry;
         this.booksRepo = booksRepo;
     }
