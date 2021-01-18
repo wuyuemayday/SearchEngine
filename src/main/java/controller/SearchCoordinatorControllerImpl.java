@@ -1,8 +1,8 @@
 package controller;
 
 import cluster.serviceregistry.ServiceRegistry;
-import entity.handler.CoordinateRequest;
-import entity.handler.CoordinateResponse;
+import entity.coordinator.CoordinateRequest;
+import entity.coordinator.CoordinateResponse;
 import repository.DocumentsRepo;
 
 public class SearchCoordinatorControllerImpl implements SearchCoordinatorController {

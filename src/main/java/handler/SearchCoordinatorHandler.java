@@ -1,8 +1,8 @@
 package handler;
 
 import controller.SearchCoordinatorController;
-import entity.handler.CoordinateRequest;
-import entity.handler.CoordinateResponse;
+import entity.coordinator.CoordinateRequest;
+import entity.coordinator.CoordinateResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

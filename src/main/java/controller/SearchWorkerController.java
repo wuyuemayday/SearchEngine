@@ -1,7 +1,8 @@
 package controller;
 
-import entity.document.Document;
+import entity.tfidf.TFIDFTaskRequest;
+import entity.tfidf.TFIDFTaskResponse;
 
 public interface SearchWorkerController {
-    double processTask(String task); // TODO make a Task object
+    TFIDFTaskResponse processTFIDFTask(TFIDFTaskRequest request);
 }

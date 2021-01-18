@@ -1,7 +1,7 @@
 package strategy.search;
 
 import entity.document.Document;
-import entity.strategy.TFIDFResult;
+import entity.tfidf.TFIDFWordResult;
 import util.DocumentUtil;
 
 import java.util.HashMap;
@@ -15,7 +15,7 @@ public final class TFIDF {
         this.util = util;
     }
 
-    public TFIDFResult getTFIDFResult(final String word, final List<Document> docs) {
+    public TFIDFWordResult getTFIDFResult(final String word, final List<Document> docs) {
         int docCount = 0;
         final Map<Document, Double> tfs = new HashMap<>();
         for (final Document doc : docs) {
@@ -27,6 +27,6 @@ public final class TFIDF {
             }
         }
 
-        return new TFIDFResult(word, tfs, docCount, docs.size());
+        return new TFIDFWordResult(word, tfs, docCount, docs.size());
     }
 }

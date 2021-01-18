@@ -1,4 +1,3 @@
-entity/strategy/TFIDFResult.class
 controller/SearchWorkerController.class
 server/WebServerImpl$1.class
 repository/DocumentsRepoImpl.class
@@ -6,12 +5,16 @@ handler/SearchCoordinatorHandler.class
 cluster/manager/ClusterManagerImpl.class
 entity/cluster/Constant.class
 entity/repository/DocumentRecord.class
+module/SerializerProvider.class
+entity/coordinator/CoordinateRequest.class
+entity/tfidf/TFIDFTaskResponse.class
 server/WebServerImpl.class
 cluster/manager/ElectionObserver.class
 module/ObjectMapperProvider.class
+entity/tfidf/TFIDFTaskRequest.class
 module/SearchProvider.class
-entity/handler/CoordinateResponse.class
 util/DocumentUtil.class
+util/Serialization.class
 server/WebServer.class
 cluster/manager/ClusterManager.class
 cluster/entity/Znode.class
@@ -28,7 +31,8 @@ handler/ResponseHandler.class
 cluster/manager/ElectionObserverImpl.class
 controller/SearchWorkerControllerImpl.class
 app/App.class
+entity/tfidf/TFIDFWordResult.class
 handler/RequestHandler.class
 controller/SearchCoordinatorControllerImpl.class
-entity/handler/CoordinateRequest.class
+entity/coordinator/CoordinateResponse.class
 strategy/document/DocumentSplitor.class

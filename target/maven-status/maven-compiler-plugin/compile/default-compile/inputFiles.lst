@@ -1,5 +1,7 @@
-/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/handler/CoordinateResponse.java
+/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/coordinator/CoordinateRequest.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/repository/DocumentsRepoImpl.java
+/Users/Kyle/workspace/projects/searchengine/src/main/java/util/Serialization.java
+/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/tfidf/TFIDFWordResult.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/manager/ElectionObserverImpl.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/manager/ClusterManager.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/app/App.java
@@ -12,14 +14,17 @@
 /Users/Kyle/workspace/projects/searchengine/src/main/java/controller/SearchWorkerControllerImpl.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/entity/repository/DocumentRecord.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/manager/ClusterManagerImpl.java
-/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/handler/CoordinateRequest.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/manager/ElectionObserver.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/util/DocumentUtil.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/module/ObjectMapperProvider.java
+/Users/Kyle/workspace/projects/searchengine/src/main/java/module/SerializerProvider.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/controller/SearchCoordinatorController.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/repository/DocumentsRepo.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/handler/RequestHandler.java
+/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/tfidf/TFIDFTaskResponse.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/serviceregistry/ServiceRegistry.java
+/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/coordinator/CoordinateResponse.java
+/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/tfidf/TFIDFTaskRequest.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/serviceregistry/ServiceRegistryImpl.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/handler/SearchCoordinatorHandler.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/entity/Znode.java
@@ -27,7 +32,6 @@
 /Users/Kyle/workspace/projects/searchengine/src/main/java/strategy/document/SimpleSplitor.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/controller/SearchCoordinatorControllerImpl.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/strategy/search/TFIDF.java
-/Users/Kyle/workspace/projects/searchengine/src/main/java/entity/strategy/TFIDFResult.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/cluster/entity/ZnodeImpl.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/handler/SearchWorkerHandler.java
 /Users/Kyle/workspace/projects/searchengine/src/main/java/controller/SearchWorkerController.java
