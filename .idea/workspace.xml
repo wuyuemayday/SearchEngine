@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d0bac3-375e-455d-a8fb-0b84d5d8f13e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFTaskRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFTaskResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module/SerializerProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/Serialization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/handler/CoordinateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/coordinator/CoordinateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/handler/CoordinateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/coordinator/CoordinateResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/strategy/TFIDFResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFWordResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/search/TFIDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/search/TFIDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/handler/CoordinateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/handler/CoordinateResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/strategy/TFIDFResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module/SearchProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/SearchProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/DocumentsRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/strategy/search/TFIDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/strategy/search/TFIDF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
