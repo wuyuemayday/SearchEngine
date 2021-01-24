@@ -8,6 +8,7 @@ import entity.task.TaskRequest;
 import entity.task.TaskResponse;
 import module.ObjectMapperProvider;
 import module.SearchProvider;
+import module.SerializerProvider;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -23,6 +24,7 @@ import server.WorkerClient;
 import server.WorkerClientImpl;
 import strategy.document.ContentSplitor;
 import strategy.document.SimpleSplitor;
+import util.Serialization;
 
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
@@ -38,7 +40,9 @@ public final class App implements Watcher {
         final ServiceRegistry coordinatorRegistry = new ServiceRegistryImpl(this.zookeeper, Constant.SUB_COORDINATOR);
         final ServiceRegistry workerRegistry = new ServiceRegistryImpl(this.zookeeper, Constant.SUB_WORKER);
 
-        final WorkerClient workerClient = new WorkerClientImpl();
+        final WorkerClient workerClient = new WorkerClientImpl(
+                SerializerProvider.provideTaskRequestSerializer(),
+                SerializerProvider.provideTaskResponseSerializer());
         final ContentSplitor splitor = new SimpleSplitor();
         final DocumentsRepo repo = new DocumentsRepoImpl();
         final SearchProvider coordinatorProvider = new SearchProvider(workerClient, workerRegistry, splitor, repo);

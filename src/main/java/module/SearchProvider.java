@@ -41,7 +41,7 @@ public final class SearchProvider {
 
         return new SearchWorkerHandler(
                 new SearchWorkerControllerImpl(repository, splitor),
-                SerializerProvider.provideTFIDFTaskRequestSerializer(),
-                SerializerProvider.provideTFIDFTaskResponseSerializer());
+                SerializerProvider.provideTaskRequestSerializer(),
+                SerializerProvider.provideTaskResponseSerializer());
     }
 }

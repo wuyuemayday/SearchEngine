@@ -23,7 +23,6 @@ handler/RequestHandler.class
 entity/coordinator/CoordinateResponse.class
 entity/proto/SearchModel$SearchResponse$1.class
 entity/proto/SearchModel$SearchRequest$Builder.class
-entity/proto/SearchModel$1.class
 repository/DocumentsRepoImpl.class
 cluster/manager/ClusterManagerImpl.class
 entity/cluster/Constant.class

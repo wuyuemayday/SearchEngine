@@ -2,80 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d0bac3-375e-455d-a8fb-0b84d5d8f13e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_14_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/document/DocumentData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/document/DocumentScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/proto/searchengine.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/CoordinatorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/WorkerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/WorkerClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/document/ContentSplitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/searchengine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/searchengine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/coordinator/CoordinateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/coordinator/CoordinateResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/document/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/document/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFTaskRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/task/TaskRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFTaskResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/task/TaskResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFWordResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFWordResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module/SerializerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SerializerProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/document/DocumentSplitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/document/SimpleSplitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/document/SimpleSplitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/search/TFIDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/search/TFIDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/DocumentUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/Znode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/ZnodeImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserverImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/cluster/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/document/Document.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/repository/DocumentRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFTaskRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFTaskResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFWordResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/handler/RequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/handler/ResponseHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module/ObjectMapperProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module/SearchProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module/SerializerProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/strategy/document/DocumentSplitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/strategy/document/SimpleSplitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/strategy/search/TFIDF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/DocumentUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/Serialization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/WorkerClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/WorkerClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/Znode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/entity/Znode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/ZnodeImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/entity/ZnodeImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManagerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserverImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserverImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/cluster/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/cluster/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/document/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/document/Document.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/document/DocumentData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/document/DocumentData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/document/DocumentScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/document/DocumentScore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequest$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequest$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequestOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchRequestOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStats$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStats$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStats$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStats$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStatsOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse$DocumentStatsOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponseOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel$SearchResponseOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/proto/SearchModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/repository/DocumentRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/repository/DocumentRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/task/TaskRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/task/TaskRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/task/TaskResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/task/TaskResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFWordResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFWordResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/RequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/RequestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/ResponseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/ResponseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CoordinatorMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CoordinatorMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/ObjectMapperProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/ObjectMapperProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/SearchProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/SearchProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/SerializerProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module/SerializerProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/DocumentsRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/WebServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/WebServerImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/WebServerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WorkerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/WorkerClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WorkerClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/WorkerClientImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strategy/document/ContentSplitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/strategy/document/ContentSplitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strategy/document/SimpleSplitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/strategy/document/SimpleSplitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strategy/search/TFIDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/strategy/search/TFIDF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Serialization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Serialization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
