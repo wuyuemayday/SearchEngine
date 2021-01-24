@@ -1,39 +1,32 @@
 package entity.tfidf;
 
-import entity.document.Document;
-
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 
 public final class TFIDFWordResult {
     private final String word;
-    private final Map<Document, Double> tfs;
-    private final int docWithWord;
-    private final int totalDocs;
+    // docID -> tf, for the given word
+    private final Map<String, Double> tfs;
+    private final double idf;
 
     public TFIDFWordResult(final String word,
-                           final Map<Document, Double> tfs,
-                           final int docWithWord,
-                           final int totalDocs) {
+                           final Map<String, Double> tfs,
+                           final double idf) {
         this.word = word;
-        this.tfs = tfs;
-        this.docWithWord = docWithWord;
-        this.totalDocs = totalDocs;
-    }
-
-    public Map<Document, Double> getTFs() {
-        return Collections.unmodifiableMap(this.tfs);
+        this.tfs = new HashMap<>(tfs);
+        this.idf = idf;
     }
 
     public String getWord() {
-        return this.word;
+        return word;
     }
 
-    public int getDocWithWord() {
-        return this.docWithWord;
+    public Map<String, Double> getTfs() {
+        return Collections.unmodifiableMap(tfs);
     }
 
-    public double getTotalDocs() {
-        return this.totalDocs;
+    public double getIdf() {
+        return idf;
     }
 }

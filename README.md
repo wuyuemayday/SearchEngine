@@ -6,7 +6,7 @@
 2. ~worker implementation~
 3. coordinator implementation
 4. setup repository
-5. implement prefix search with cache
+5. implement prefix search with cache (another service)
 
 ## Reference
 

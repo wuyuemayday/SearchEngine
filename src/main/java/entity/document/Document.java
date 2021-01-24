@@ -2,10 +2,12 @@ package entity.document;
 
 public final class Document {
     private final String id;
+    private final String name;
     private final String content;
 
-    public Document(final String id, final String content) {
+    public Document(final String id, final String name, final String content) {
         this.id = id;
+        this.name = name;
         this.content = content;
     }
 
@@ -19,6 +21,10 @@ public final class Document {
 
     public int getSize() {
         return this.content.length();
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     @Override

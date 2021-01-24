@@ -1,35 +1,48 @@
 package controller;
 
 import entity.document.Document;
-import entity.tfidf.TFIDFWordResult;
-import entity.tfidf.TFIDFTaskRequest;
-import entity.tfidf.TFIDFTaskResponse;
+import entity.document.DocumentData;
+import entity.task.TaskRequest;
+import entity.task.TaskResponse;
 import repository.DocumentsRepo;
-import strategy.search.TFIDF;
+import strategy.document.ContentSplitor;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public final class SearchWorkerControllerImpl implements SearchWorkerController {
     private final DocumentsRepo repository;
-    private final TFIDF strategy;
+    private final ContentSplitor splitor;
 
     public SearchWorkerControllerImpl(final DocumentsRepo repository,
-                                      final TFIDF strategy) {
+                                      final ContentSplitor splitor) {
         this.repository = repository;
-        this.strategy = strategy;
+        this.splitor = splitor;
     }
 
     @Override
-    public TFIDFTaskResponse processTFIDFTask(final TFIDFTaskRequest request) {
-        final Map<String, TFIDFWordResult> response = new HashMap<>();
+    public TaskResponse processTFIDFTask(final TaskRequest request) {
+        final List<DocumentData> response = new ArrayList<>();
         final List<Document> documents = this.repository.getDocumentsByIDs(request.getDocumentIDs());
-        for (final String word : request.getTerms()) {
-            final TFIDFWordResult res = this.strategy.getTFIDFResult(word, documents);
-            response.putIfAbsent(word, res);
+        for (final Document doc : documents) {
+            final List<String> words = this.splitor.splitDocumentToWords(doc.getContent());
+            final Map<String, Integer> freq = this.getFrequency(words);
+
+            final DocumentData data = new DocumentData(doc.getID(), words.size(), freq);
+            response.add(data);
         }
 
-        return new TFIDFTaskResponse(response);
+        return new TaskResponse(response);
+    }
+
+    private Map<String, Integer> getFrequency(final List<String> words) {
+        final Map<String, Integer> res = new HashMap<>();
+        for (final String word : words) {
+            res.put(word, res.getOrDefault(word, 0) + 1);
+        }
+
+        return res;
     }
 }

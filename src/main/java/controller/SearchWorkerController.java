@@ -1,8 +1,8 @@
 package controller;
 
-import entity.tfidf.TFIDFTaskRequest;
-import entity.tfidf.TFIDFTaskResponse;
+import entity.task.TaskRequest;
+import entity.task.TaskResponse;
 
 public interface SearchWorkerController {
-    TFIDFTaskResponse processTFIDFTask(TFIDFTaskRequest request);
+    TaskResponse processTFIDFTask(TaskRequest request);
 }

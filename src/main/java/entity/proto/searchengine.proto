@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package distributed.search;
+
+option java_package = "entity.proto";
+
+option java_outer_classname = "SearchModel";
+
+message SearchRequest {
+    required string search_term = 1;
+}
+
+message SearchResponse {
+    repeated DocumentStats documents = 1;
+
+    message DocumentStats {
+        required string name = 1;
+        required double score = 2;
+        required int64 size = 3;
+        optional string author = 4;
+    }
+}

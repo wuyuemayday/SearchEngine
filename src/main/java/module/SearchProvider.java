@@ -1,7 +1,6 @@
 package module;
 
 import cluster.serviceregistry.ServiceRegistry;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import controller.SearchCoordinatorController;
 import controller.SearchCoordinatorControllerImpl;
 import controller.SearchWorkerControllerImpl;
@@ -9,35 +8,39 @@ import handler.SearchCoordinatorHandler;
 import handler.SearchWorkerHandler;
 import repository.DocumentsRepo;
 import repository.DocumentsRepoImpl;
-import strategy.document.DocumentSplitor;
+import server.WorkerClient;
+import strategy.document.ContentSplitor;
 import strategy.document.SimpleSplitor;
-import strategy.search.TFIDF;
-import util.DocumentUtil;
 
 public final class SearchProvider {
-    private final ObjectMapper objectMapper;
+    private final WorkerClient client;
     private final ServiceRegistry workerRegistry;
+    private final ContentSplitor splitor;
+    private final DocumentsRepo repo;
 
-    public SearchProvider(final ObjectMapper objectMapper,
-                          final ServiceRegistry workerRegistry) {
-        this.objectMapper = objectMapper;
+    public SearchProvider(final WorkerClient client,
+                          final ServiceRegistry workerRegistry,
+                          final ContentSplitor splitor,
+                          final DocumentsRepo repo) {
+        this.client = client;
         this.workerRegistry = workerRegistry;
+        this.splitor = splitor;
+        this.repo = repo;
     }
 
     public SearchCoordinatorHandler provideCoordinatorHandler() {
-        final SearchCoordinatorController controller = new SearchCoordinatorControllerImpl(this.workerRegistry, new DocumentsRepoImpl());
+        final SearchCoordinatorController controller = new SearchCoordinatorControllerImpl(
+                this.client, this.workerRegistry, this.splitor, this.repo);
 
-        return new SearchCoordinatorHandler(controller, this.objectMapper);
+        return new SearchCoordinatorHandler(controller);
     }
 
     public SearchWorkerHandler provideWorkerHandler() {
-        final DocumentSplitor splitor = new SimpleSplitor();
-        final DocumentUtil util = new DocumentUtil(splitor);
+        final ContentSplitor splitor = new SimpleSplitor();
         final DocumentsRepo repository = new DocumentsRepoImpl();
-        final TFIDF strategy = new TFIDF(util);
 
         return new SearchWorkerHandler(
-                new SearchWorkerControllerImpl(repository, strategy),
+                new SearchWorkerControllerImpl(repository, splitor),
                 SerializerProvider.provideTFIDFTaskRequestSerializer(),
                 SerializerProvider.provideTFIDFTaskResponseSerializer());
     }

@@ -2,8 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d0bac3-375e-455d-a8fb-0b84d5d8f13e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_14_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/document/DocumentData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/document/DocumentScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/proto/searchengine.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/CoordinatorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/WorkerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/WorkerClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/document/ContentSplitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/searchengine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/searchengine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/coordinator/CoordinateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/coordinator/CoordinateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/document/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/document/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFTaskRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/task/TaskRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFTaskResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/task/TaskResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFWordResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/tfidf/TFIDFWordResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SearchProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/SerializerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/SerializerProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/document/DocumentSplitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/document/SimpleSplitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/document/SimpleSplitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/search/TFIDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/search/TFIDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/DocumentUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/Znode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/entity/ZnodeImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ClusterManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserverImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/cluster/Constant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/coordinator/CoordinateResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/document/Document.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/repository/DocumentRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFTaskRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFTaskResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/tfidf/TFIDFWordResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/ResponseHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/ObjectMapperProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/SearchProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module/SerializerProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/WebServerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strategy/document/DocumentSplitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strategy/document/SimpleSplitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strategy/search/TFIDF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/DocumentUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Serialization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,14 +178,14 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="184" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.813@0.25.1440.813" timestamp="1610825845843" />
-    <state x="454" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610825128624">
+    <state x="454" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611468661884">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="454" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.813@0.25.1440.813" timestamp="1610825128624" />
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1610928293313">
+    <state x="454" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.813@0.25.1440.813" timestamp="1611468661884" />
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1611517976328">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.25.1440.813@0.25.1440.813" timestamp="1610928293313" />
+    <state x="533" y="151" key="#com.intellij.ide.util.MemberChooser/0.25.1440.813@0.25.1440.813" timestamp="1611517976328" />
     <state x="457" y="225" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1610825839476">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -166,6 +238,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="229" y="67" key="SettingsEditor/0.25.1440.813@0.25.1440.813" timestamp="1610825583338" />
+    <state x="421" y="186" width="597" height="490" key="find.popup" timestamp="1611517721803">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="421" y="186" width="597" height="490" key="find.popup/0.25.1440.813@0.25.1440.813" timestamp="1611517721803" />
     <state x="385" y="194" key="run.anything.popup" timestamp="1610911476142">
       <screen x="0" y="25" width="1440" height="813" />
     </state>

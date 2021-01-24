@@ -7,7 +7,7 @@ import java.util.List;
 
 public class DocumentsRepoImpl implements DocumentsRepo {
     @Override
-    public List<Document> scan() {
+    public List<String> scan() {
         return new ArrayList<>();
     }
 
