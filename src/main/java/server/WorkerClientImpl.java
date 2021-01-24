@@ -2,6 +2,8 @@ package server;
 
 import entity.task.TaskRequest;
 import entity.task.TaskResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import util.Serialization;
 
 import java.net.URI;
@@ -11,6 +13,7 @@ import java.net.http.HttpResponse;
 import java.util.concurrent.CompletableFuture;
 
 public class WorkerClientImpl implements WorkerClient {
+    private static final Logger LOGGER = LoggerFactory.getLogger(WorkerClientImpl.class);
     private final HttpClient client;
     private final Serialization<TaskRequest> reqSerializer;
     private final Serialization<TaskResponse> respSerializer;
@@ -26,6 +29,7 @@ public class WorkerClientImpl implements WorkerClient {
 
     @Override
     public CompletableFuture<TaskResponse> doSearch(final String url, final TaskRequest request) {
+        LOGGER.info("Sending search request to worker {}", url);
         final byte[] payload = this.reqSerializer.serialize(request);
         final HttpRequest httpRequest = HttpRequest.newBuilder()
                 .POST(HttpRequest.BodyPublishers.ofByteArray(payload))

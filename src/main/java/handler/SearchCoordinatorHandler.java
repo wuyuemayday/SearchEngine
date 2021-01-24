@@ -20,9 +20,10 @@ public final class SearchCoordinatorHandler implements RequestHandler {
 
     @Override
     public byte[] handleRequest(final byte[] request) throws Exception {
-        LOGGER.info("Handling {} request", ENDPOINT);
+        final String terms = new String(request);
+        LOGGER.info("Handling {} request, search terms: {}", ENDPOINT, terms);
 
-        final CoordinateRequest coordinateRequest = new CoordinateRequest(new String(request));
+        final CoordinateRequest coordinateRequest = new CoordinateRequest(terms);
         final CoordinateResponse coordinateResponse = this.controller.coordinateSearches(coordinateRequest);
 
         final SearchModel.SearchResponse resp = CoordinatorMapper.CoordinateResponseToProtobufResponse(coordinateResponse);

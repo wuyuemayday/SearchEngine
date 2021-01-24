@@ -28,7 +28,7 @@ public final class SearchWorkerHandler implements RequestHandler {
         LOGGER.info("Handling {} request", ENDPOINT);
 
         final TaskRequest task = this.reqSerializer.deserialize(request);
-        final TaskResponse res = this.controller.processTFIDFTask(task);
+        final TaskResponse res = this.controller.processTask(task);
 
         return this.respSerializer.serialize(res);
     }

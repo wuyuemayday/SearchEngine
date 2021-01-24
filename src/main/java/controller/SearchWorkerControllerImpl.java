@@ -4,6 +4,8 @@ import entity.document.Document;
 import entity.document.DocumentData;
 import entity.task.TaskRequest;
 import entity.task.TaskResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import repository.DocumentsRepo;
 import strategy.document.ContentSplitor;
 
@@ -13,6 +15,8 @@ import java.util.List;
 import java.util.Map;
 
 public final class SearchWorkerControllerImpl implements SearchWorkerController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(SearchWorkerController.class);
+
     private final DocumentsRepo repository;
     private final ContentSplitor splitor;
 
@@ -23,7 +27,7 @@ public final class SearchWorkerControllerImpl implements SearchWorkerController 
     }
 
     @Override
-    public TaskResponse processTFIDFTask(final TaskRequest request) {
+    public TaskResponse processTask(final TaskRequest request) {
         final List<DocumentData> response = new ArrayList<>();
         final List<Document> documents = this.repository.getDocumentsByIDs(request.getDocumentIDs());
         for (final Document doc : documents) {
