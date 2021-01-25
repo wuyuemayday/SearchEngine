@@ -35,14 +35,16 @@ public class ElectionObserverImpl implements ElectionObserver {
     public void onLeader() {
         final SearchCoordinatorHandler handler = this.searchProvider.provideCoordinatorHandler();
         this.startServer(handler);
-        this.coordinatorRegistry.register(LOCALHOST + handler.getEndpoint());
+        this.workerRegistry.unregister();
+        this.coordinatorRegistry.register(String.format("%s:%s%s", LOCALHOST, this.port, handler.getEndpoint()));
     }
 
     @Override
     public void onWorker() {
         final SearchWorkerHandler handler = this.searchProvider.provideWorkerHandler();
         this.startServer(handler);
-        this.workerRegistry.register(LOCALHOST + handler.getEndpoint());
+        this.coordinatorRegistry.unregister();
+        this.workerRegistry.register(String.format("%s:%s%s", LOCALHOST, this.port, handler.getEndpoint()));
     }
 
     private void startServer(final RequestHandler handler) {

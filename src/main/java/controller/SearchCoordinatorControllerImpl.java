@@ -43,11 +43,11 @@ public class SearchCoordinatorControllerImpl implements SearchCoordinatorControl
     public CoordinateResponse coordinateSearches(CoordinateRequest request) {
         final List<String> workers = this.workerRegistry.getHosts();
         if (workers.isEmpty()) {
-            LOGGER.warn("No worker available to dispatch search request");
+            LOGGER.warn("[CoordinateController] No worker available to dispatch search request");
             return new CoordinateResponse(new ArrayList<>());
         }
 
-        LOGGER.info("Dispatching search requests to {} workers ...", workers.size());
+        LOGGER.info("[CoordinateController] Dispatching search requests to {} workers ...", workers.size());
 
         final List<String> words = this.splitor.splitDocumentToWords(request.getQuery());
         final List<String> docs = this.documentsRepo.scan();
@@ -108,11 +108,11 @@ public class SearchCoordinatorControllerImpl implements SearchCoordinatorControl
     private List<TaskResponse> dispatchWorkerRequests(final Map<String, TaskRequest> reqs) {
         final List<CompletableFuture<TaskResponse>> futures = new ArrayList<>();
         for (final String worker : reqs.keySet()) {
-            LOGGER.info("Dispatch search requests to worker {}", worker);
+            LOGGER.info("[CoordinateController] Dispatch search requests to worker {}", worker);
             futures.add(this.client.doSearch(worker, reqs.get(worker)));
         }
 
-        LOGGER.info("Waiting on workers responses ...");
+        LOGGER.info("[CoordinateController] Waiting on workers responses ...");
         final List<TaskResponse> res = new ArrayList<>();
         for (final CompletableFuture<TaskResponse> fut : futures) {
             try {

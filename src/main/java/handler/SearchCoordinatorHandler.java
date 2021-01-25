@@ -21,7 +21,7 @@ public final class SearchCoordinatorHandler implements RequestHandler {
     @Override
     public byte[] handleRequest(final byte[] request) throws Exception {
         final String terms = new String(request);
-        LOGGER.info("Handling {} request, search terms: {}", ENDPOINT, terms);
+        LOGGER.info("[CoordinatorHandler] Handling {} request, search terms: {}", ENDPOINT, terms);
 
         final CoordinateRequest coordinateRequest = new CoordinateRequest(terms);
         final CoordinateResponse coordinateResponse = this.controller.coordinateSearches(coordinateRequest);

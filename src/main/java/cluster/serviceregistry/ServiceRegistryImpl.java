@@ -40,7 +40,7 @@ public final class ServiceRegistryImpl implements ServiceRegistry, Watcher {
                     ZooDefs.Ids.OPEN_ACL_UNSAFE,
                     CreateMode.EPHEMERAL_SEQUENTIAL);
 
-            LOGGER.info("Registered znode {} to registry {}", this.currentZnode, this.registry);
+            LOGGER.info("[{}] Registered znode {} with host {}", this.registry, this.currentZnode, host);
         } catch (final KeeperException | InterruptedException e) {
             e.printStackTrace();
         }
@@ -63,7 +63,7 @@ public final class ServiceRegistryImpl implements ServiceRegistry, Watcher {
             return;
         }
 
-        LOGGER.info("Unregistered znode {} from registry {}", this.currentZnode, this.registry);
+        LOGGER.info("[{}] Unregistered znode {}}", this.registry, this.currentZnode);
     }
 
     @Override

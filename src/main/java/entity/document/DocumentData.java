@@ -1,16 +1,18 @@
 package entity.document;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public final class DocumentData {
-    private String docID;
-    private int totalWords;
-    private Map<String, Integer> frequency;
+    private final String docID;
+    private final int totalWords;
+    private final Map<String, Integer> frequency;
 
-    public DocumentData(final String docID,
-                        final int totalWords,
-                        final Map<String, Integer> frequency) {
+    public DocumentData(@JsonProperty("docID") final String docID,
+                        @JsonProperty("totalWords") final int totalWords,
+                        @JsonProperty("frequency") final Map<String, Integer> frequency) {
         this.docID = docID;
         this.totalWords = totalWords;
         this.frequency = new HashMap<>(frequency);

@@ -23,6 +23,6 @@ public class DocumentsRepoImpl implements DocumentsRepo {
 
     @Override
     public List<Document> getDocumentsByIDs(List<String> ids) {
-        return null;
+        return new ArrayList<>();
     }
 }

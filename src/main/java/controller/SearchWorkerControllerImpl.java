@@ -28,8 +28,12 @@ public final class SearchWorkerControllerImpl implements SearchWorkerController 
 
     @Override
     public TaskResponse processTask(final TaskRequest request) {
+        LOGGER.info("[WorkerController] processing task ...");
+
         final List<DocumentData> response = new ArrayList<>();
         final List<Document> documents = this.repository.getDocumentsByIDs(request.getDocumentIDs());
+        LOGGER.info("[WorkerController] processing {} documents", documents.size());
+
         for (final Document doc : documents) {
             final List<String> words = this.splitor.splitDocumentToWords(doc.getContent());
             final Map<String, Integer> freq = this.getFrequency(words);

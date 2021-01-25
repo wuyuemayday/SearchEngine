@@ -3,16 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="f5d0bac3-375e-455d-a8fb-0b84d5d8f13e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cluster/manager/ElectionObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cluster/manager/ElectionObserverImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cluster/serviceregistry/ServiceRegistryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cluster/serviceregistry/ServiceRegistryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchCoordinatorControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchWorkerControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/document/DocumentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/document/DocumentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/task/TaskRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/task/TaskRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/task/TaskResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/task/TaskResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchCoordinatorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/SearchWorkerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/WorkerClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/WorkerClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchWorkerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocumentsRepoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserverImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/manager/ElectionObserverImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cluster/serviceregistry/ServiceRegistryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchCoordinatorControllerImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SearchWorkerControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/document/DocumentData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/document/DocumentData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/task/TaskRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/task/TaskRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/task/TaskResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/task/TaskResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/SearchCoordinatorHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/SearchWorkerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/WorkerClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/WorkerClientImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/DocumentsRepoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/searchengine-1.0-SNAPSHOT.jar" afterDir="false" />
@@ -178,10 +191,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="229" y="67" key="SettingsEditor/0.25.1440.813@0.25.1440.813" timestamp="1610825583338" />
-    <state x="421" y="186" width="597" height="490" key="find.popup" timestamp="1611517721803">
+    <state x="421" y="186" width="597" height="490" key="find.popup" timestamp="1611520007812">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="421" y="186" width="597" height="490" key="find.popup/0.25.1440.813@0.25.1440.813" timestamp="1611517721803" />
+    <state x="421" y="186" width="597" height="490" key="find.popup/0.25.1440.813@0.25.1440.813" timestamp="1611520007812" />
     <state x="385" y="194" key="run.anything.popup" timestamp="1610911476142">
       <screen x="0" y="25" width="1440" height="813" />
     </state>

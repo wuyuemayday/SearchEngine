@@ -25,10 +25,12 @@ public final class SearchWorkerHandler implements RequestHandler {
 
     @Override
     public byte[] handleRequest(byte[] request) throws Exception {
-        LOGGER.info("Handling {} request", ENDPOINT);
+        LOGGER.info("[WorkerHandler] Handling {} request", ENDPOINT);
 
         final TaskRequest task = this.reqSerializer.deserialize(request);
         final TaskResponse res = this.controller.processTask(task);
+
+        LOGGER.info("[WorkerHandler] Successfully handled {} request", ENDPOINT);
 
         return this.respSerializer.serialize(res);
     }
